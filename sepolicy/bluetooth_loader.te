@@ -21,7 +21,7 @@ allow bluetooth_loader persist_file:dir search;
 r_dir_file(bluetooth_loader, persist_bluetooth_file)
 
 # Set persist.service.bdroid.* and bluetooth.* property values
-allow { bluetooth bluetooth_loader } bluetooth_prop:property_service set;
+Update device to use set_prop() macro
 
 # Allow getprop/setprop for init.mako.bt.sh
 allow bluetooth_loader system_file:file execute_no_trans;

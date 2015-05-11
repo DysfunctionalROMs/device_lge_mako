@@ -24,9 +24,4 @@ allow rmt cgroup:dir { create add_name };
 # Wake lock access
 wakelock_use(rmt)
 
-# Allow access to /dev/uio0.
-allow rmt uio_device:chr_file rw_file_perms;
-
-# rmt_storage shuts itself down if there is an unknown value of ro.baseband
-unix_socket_connect(rmt, property, init)
-allow rmt ctl_rmt_prop:property_service set;
+Update device to use set_prop() macro
