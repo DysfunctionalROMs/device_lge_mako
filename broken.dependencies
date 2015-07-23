@@ -7,14 +7,8 @@
  },
  {
    "remote":      "github",
-   "repository":  "roguesyko/android_kernel_lge_mako-lz",
-   "target_path": "kernel/lge/mako-lz",
+   "repository":  "roguesyko/reaper_kernel_mako",
+   "target_path": "kernel/lge/mako",
    "branch":      "lp5.1"
- },
- {
-   "remote":      "github",
-   "repository":  "LightningZap/vendor_lz-kernel",
-   "target_path": "vendor/lz-kernel",
-   "branch":      "lp"
  }
 ]
