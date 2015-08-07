@@ -148,6 +148,9 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
 HAVE_ADRENO_SOURCE:= false
 
+# Keepin it block based for the sake of SuperSu
+BLOCK_BASED_OTA=true
+
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
 
