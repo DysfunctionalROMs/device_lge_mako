@@ -10,7 +10,7 @@
    "repository":  "CyanogenMod/android_kernel_google_msm",
    "target_path": "kernel/google/msm",
    "branch":      "cm-13.0"
- }
+ },
   {
    "remote":      "github",
    "repository": "CyanogenMod/android_external_stlport",
