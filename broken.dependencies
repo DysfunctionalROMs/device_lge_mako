@@ -7,9 +7,9 @@
  },
  {
    "remote":      "github",
-   "repository":  "CyanogenMod/android_kernel_google_msm",
+   "repository":  "roguesyko/the_reaper_mako",
    "target_path": "kernel/google/msm",
-   "branch":      "cm-13.0"
+   "branch":      "m6.0"
  },
   {
    "remote":      "github",
