@@ -7,8 +7,8 @@
  },
  {
    "remote":      "github",
-   "repository":  "roguesyko/the_reaper_mako",
-   "target_path": "kernel/google/msm",
+   "repository":  "roguesyko/android_kernel_google_msm",
+   "target_path": "kernel/lge/mako",
    "branch":      "m6.0"
  },
   {
