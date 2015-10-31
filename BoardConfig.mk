@@ -74,15 +74,9 @@ TARGET_USES_OVERLAY := true
 TARGET_USES_SF_BYPASS := true
 TARGET_USES_C2D_COMPOSITION := false
 
-# Enable dex-preoptimization to speed up first boot sequence
-ifeq ($(HOST_OS),linux)
-  ifeq ($(TARGET_BUILD_VARIANT),user)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := true
-    endif
-  endif
-endif
-WITH_DEXPREOPT_BOOT_IMG_ONLY ?= true
+WITH_DEXPREOPT_BOOT_IMG_ONLY ?= false
+WITH_DEXPREOPT := false
+DONT_DEXPREOPT_PREBUILTS := true
 
 TARGET_RECOVERY_FSTAB = device/lge/mako/fstab.mako
 RECOVERY_FSTAB_VERSION = 2
@@ -103,6 +97,7 @@ BOARD_USES_CAMERA_FAST_AUTOFOCUS := true
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.mako
 
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
+BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 TARGET_NO_RPC := true
 BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 
