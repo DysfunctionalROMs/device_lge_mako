@@ -17,12 +17,11 @@
  allow hci_attach bluetooth_loader:fd use;
  
  # Read mac address from persist partition
-  allow bluetooth_loader persist_file:dir search;
-  r_dir_file(bluetooth_loader, persist_bluetooth_file)
+ allow bluetooth_loader persist_file:dir search;
+ r_dir_file(bluetooth_loader, persist_bluetooth_file)
   
-  # Set persist.service.bdroid.* and bluetooth.* property values
-  set_prop(bluetooth_loader, bluetooth_prop)
+ # Set persist.service.bdroid.* and bluetooth.* property values
+ set_prop(bluetooth_loader, bluetooth_prop)
   
-  # Allow getprop/setprop for init.mako.bt.sh
-  allow bluetooth_loader system_file:file execute_no_trans;
-View
+ # Allow getprop/setprop for init.mako.bt.sh
+ allow bluetooth_loader system_file:file execute_no_trans;
