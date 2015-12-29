@@ -31,3 +31,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Enable Torch
 PRODUCT_PACKAGES += Torch
+
+# Broken Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	DEVICE_MAINTAINERS="Jesse Smith (oraixearl)"
