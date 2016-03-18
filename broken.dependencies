@@ -16,5 +16,11 @@
    "repository":  "CyanogenMod/android_external_stlport",
    "target_path": "external/stlport",
    "branch":      "cm-13.0"
+ },
+ {
+   "remote":      "github",
+   "repository":  "BrokenROM/packages_apps_SnapdragonCamera",
+   "target_path": "packages/apps/SnapdragonCamera",
+   "branch":      "m6.0.1"
  }
 ]

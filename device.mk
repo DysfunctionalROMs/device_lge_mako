@@ -199,7 +199,8 @@ PRODUCT_PACKAGES += \
 	camera.mako \
 	camera.msm8960 \
 	libmmcamera_interface2 \
-	libmmcamera_interface
+	libmmcamera_interface \
+	SnapdragonCamera
 
 PRODUCT_PACKAGES += \
         libmm-omxcore \
