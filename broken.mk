@@ -2,9 +2,6 @@
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 768
 
-# Specify phone tech before including full_phone
-$(call inherit-product, vendor/broken/config/gsm.mk)
-
 # Inherit some common stuff.
 $(call inherit-product, vendor/broken/config/common_full_phone.mk)
 
